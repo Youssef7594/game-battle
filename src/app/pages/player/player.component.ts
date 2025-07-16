@@ -11,41 +11,30 @@ export class PlayerComponent {
 
 }
 
+
+
+
 export class players{
   id : number ;
   nom : string ;
   attack : number ;
   pv : number ;
-  
 
+
+
+
+  constructor(id: number, nom: string, pv: number ){
+    this.id = id;
+    this.nom = nom;
+    this.pv = pv;
+    // Génère une attaque aléatoire entre 30 et 60
+    this.attack = Math.floor(Math.random() * (60 - 30 + 1)) + 30;
+  }
+
+
+
+  
 
 
 }
 
-
-
-
-
-export class Bien {
-  id : number ;
-  nom : string;
-  localisation : string ;
-  image : string ;
-  prix : string ;
-  slug : string ;
-  caracteristique : string ;
-  type : string ;
-
-
-  constructor(id : number, nom : string, localisation : string, image : string, prix : string, slug : string, caracteristique : string, type : string ) {
-    this.id = id;
-    this.nom = nom;
-    this.localisation = localisation;
-    this.image = image;
-    this.prix = prix;
-    this.slug = slug;
-    this.caracteristique = caracteristique;
-    this.type = type
-
-  } */
-/*}  */
