@@ -1,9 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
 
+html, body {
+    height: 100%;
+  }
 
 .main-home{
     background-image: url('/assets/images/fond-jeux.gif');
     background-size: cover;
-    margin-top: 0px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    
+   
+
 
     .home-page{
         text-align: center;
