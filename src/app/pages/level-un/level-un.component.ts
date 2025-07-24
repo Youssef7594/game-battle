@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PlayerComponent } from './pages/player/player.component';
 
 @Component({
   selector: 'app-level-un',

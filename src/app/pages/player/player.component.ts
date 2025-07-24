@@ -10,11 +10,17 @@ import { Players } from 'src/app/pages/player';
 })
 export class PlayerComponent {
   player: Players;
+  adversaire: Players;
 
   constructor() {
     // ✅ Création d’un joueur
     this.player = new Players(1, "Héros", 100);
+    this.adversaire = new Players(2, "Énemie", 100)
   }
+
+  attaquer() {
+    this.adversaire.pv -= this.player.attack;
+  };
 
 }
 
@@ -40,6 +46,7 @@ export class Players{
     
   }
 
+  
 
 
   
@@ -48,6 +55,4 @@ export class Players{
 };
 
 
-attaquer() {
-  this.adversaire.pv -= this.player.attack;
-};
+
