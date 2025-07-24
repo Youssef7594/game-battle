@@ -1,4 +1,6 @@
+
 import { Component } from '@angular/core';
+import { Players } from 'src/app/pages/player';
 
 @Component({
   selector: 'app-player',
@@ -7,14 +9,19 @@ import { Component } from '@angular/core';
   styleUrl: './player.component.css'
 })
 export class PlayerComponent {
-  player: players[] = [] ;
+  player: Players;
+
+  constructor() {
+    // ✅ Création d’un joueur
+    this.player = new Players(1, "Héros", 100);
+  }
 
 }
 
 
 
 
-export class players{
+export class Players{
   id : number ;
   nom : string ;
   attack : number ;
@@ -29,6 +36,8 @@ export class players{
     this.pv = pv;
     // Génère une attaque aléatoire entre 30 et 60
     this.attack = Math.floor(Math.random() * (60 - 30 + 1)) + 30;
+
+    
   }
 
 
@@ -36,5 +45,9 @@ export class players{
   
 
 
-}
+};
 
+
+attaquer() {
+  this.adversaire.pv -= this.player.attack;
+};
