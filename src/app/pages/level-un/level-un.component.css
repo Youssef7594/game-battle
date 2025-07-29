@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+html, body {
+    height: 100%;
+  }
+
+.main-level-one{
+    background-image: url('/assets/images/fond-jeux.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+
+}
