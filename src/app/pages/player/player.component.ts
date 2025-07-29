@@ -1,6 +1,6 @@
 
 import { Component } from '@angular/core';
-import { Players } from 'src/app/pages/player';
+/* import { Players } from 'src/app/pages/player'; */
 
 @Component({
   selector: 'app-player',
