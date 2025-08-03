@@ -1,15 +1,20 @@
-<div class="perso">
-    <h2>{{ player.nom }}</h2>
-    <p>PV : {{ player.pv }}</p>
-    <p>Attack : {{ player.attack }}</p>
+<div class="characters">
+    
+    <div class="perso">
+        <h2>{{ player.nom }}</h2>
+        <p>PV : {{ player.pv }}</p>
+        <p>Attack : {{ player.attack }}</p>
+    
+    </div>
+    
+    <button (click)="attaquer()">Attaquer</button>
+    
+    <div class="opponent">
+        <h2>{{ adversaire.nom }}</h2>
+        <p>PV : {{ adversaire.pv }}</p>
+        <p> Attack : {{ adversaire.attack }}</p>
+    
+    </div>
 
 </div>
 
-<button (click)="attaquer()">Attaquer</button>
-
-<div class="opponent">
-    <h2>{{ adversaire.nom }}</h2>
-    <p>PV : {{ adversaire.pv }}</p>
-    <p> Attack : {{ adversaire.attack }}</p>
-
-</div>
