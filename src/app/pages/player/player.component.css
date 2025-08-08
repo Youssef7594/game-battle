@@ -1,4 +1,25 @@
 .characters{
     display: flex;
     justify-content: center;
+
+    .perso{
+        margin-right: 65px;
+        border: solid;
+        padding: 10px;
+        background-color: aliceblue;
+    }
+
+    #button-attack{
+        margin-right: 65px;
+    }
+
+    #button-attack:hover{
+        background-color: red;
+        color: aliceblue;
+    }
+
+    .opponent{
+        padding: 10px;
+        background-color: aliceblue;
+    }
 }

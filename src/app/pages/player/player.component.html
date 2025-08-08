@@ -1,5 +1,5 @@
 <div class="characters">
-    
+
     <div class="perso">
         <h2>{{ player.nom }}</h2>
         <p>PV : {{ player.pv }}</p>
@@ -7,7 +7,7 @@
     
     </div>
     
-    <button (click)="attaquer()">Attaquer</button>
+    <button id="button-attack" (click)="attaquer()">Attaquer <br> (Press to attack)</button>
     
     <div class="opponent">
         <h2>{{ adversaire.nom }}</h2>
