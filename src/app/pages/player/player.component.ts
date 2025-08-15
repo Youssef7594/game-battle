@@ -14,8 +14,8 @@ export class PlayerComponent {
 
   constructor() {
     // ✅ Création d’un joueur
-    this.player = new Players(1, "Héros", 100);
-    this.adversaire = new Players(2, "Énemie", 100)
+    this.player = new Players(1, "Hero", 100);
+    this.adversaire = new Players(2, "Opponent", 100)
   }
 
   attaquer() {
