@@ -13,10 +13,11 @@ html, body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     margin: 0;
     padding: 0;
     
-   
+    
 
 
     .home-page{
@@ -28,13 +29,19 @@ html, body {
         }
 
         .link-button{
-            
+            margin-top: 15px;
             #start-link{
                 font-size: 40px;
                 text-decoration: none;
-                color: aliceblue;
+                color: white;
                 border: solid;
                 padding: 15px;
+            }
+
+            #start-link:hover{
+                background-color: red;
+                
+            
             }
         }
 
@@ -44,6 +51,21 @@ html, body {
 
     .rules{
         margin-top: 400px;
+        padding-bottom: 150px;
+        text-align: center;
+        
+        h2{
+            color: aliceblue;
+            
+        }
+        
+        p{
+            margin-top: 20px;
+            color: aliceblue;
+            background-color: rgba(0, 0, 0, 0.385);
+        }
     }
     
 }
+
+
