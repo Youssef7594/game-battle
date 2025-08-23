@@ -1,5 +1,7 @@
 
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+
 /* import { Players } from 'src/app/pages/player'; */
 
 @Component({
@@ -12,7 +14,7 @@ export class PlayerComponent {
   player: Players;
   adversaire: Players;
 
-  constructor() {
+  constructor(private router:Router) {
     // ✅ Création d’un joueur
     this.player = new Players(1, "Hero", 100);
     this.adversaire = new Players(2, "Opponent", 100)
@@ -20,6 +22,16 @@ export class PlayerComponent {
 
   attaquer() {
     this.adversaire.pv -= this.player.attack;
+
+    // Vérifier si l'adversaire est mort
+    if (this.adversaire.pv <= 0) {
+      this.router.navigate(['/lose']);
+    }
+
+    // Vérifier si le joueur est mort
+    if (this.player.pv <= 0) {
+      this.router.navigate(['/level-two']);
+    }
   };
 
 }
