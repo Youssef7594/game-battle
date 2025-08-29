@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+html, body {
+    height: 100%;
+  }
+
+.main-level-one{
+    background-image: url('/assets/images/fond-jeux.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    h1{
+        text-align: center;
+        font-size: 50px;
+        padding-top: 100px;
+        color: gold;
+    }
+
+    .combat{
+        margin-top: 80px;
+        text-align: center;
+    }
+
+    .return-home{
+        margin-top: 370px;
+        padding-bottom: 150px;
+        text-align: center;
+
+        a{
+            color: red;
+            border: solid white;
+            background-color: white;
+            padding: 10px;
+        }
+    }
+
+
+
+}
