@@ -27,26 +27,27 @@ export class PlayerComponent {
 
     // Vérifier si l'adversaire est mort
     if (this.adversaire.pv <= 0) {
-      this.router.navigate(['/lose']);
+      this.router.navigate(['/level-two']);
     }
 
     // Vérifier si le joueur est mort
     if (this.player.pv <= 0) {
-      this.router.navigate(['/level-two']);
+      this.router.navigate(['/lose']);
     }
   };
+
 
   attaquerTwo() {
     this.adversairetwo.pv -= this.player.attack;
 
     // Vérifier si l'adversaire est mort
     if (this.adversairetwo.pv <= 0) {
-      this.router.navigate(['/lose']);
+      this.router.navigate(['/home']);
     }
 
     // Vérifier si le joueur est mort
     if (this.player.pv <= 0) {
-      this.router.navigate(['/level-two']);
+      this.router.navigate(['/lose']);
     }
   };
 
