@@ -30,6 +30,8 @@ export class PlayerComponent {
       this.router.navigate(['/level-two']);
     }
 
+    
+
     // Vérifier si le joueur est mort
     if (this.player.pv <= 0) {
       this.router.navigate(['/lose']);
