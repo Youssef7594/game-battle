@@ -1,6 +1,7 @@
 .characters{
     display: flex;
     justify-content: center;
+    justify-content: space-around;
 
     .perso{
         margin-right: 65px;
@@ -10,7 +11,7 @@
     }
 
     #button-attack{
-        margin-right: 65px;
+        margin-right: 15px;
     }
 
     #button-attack:hover{
@@ -19,6 +20,11 @@
     }
 
     .opponent{
+        padding: 10px;
+        background-color: aliceblue;
+    }
+
+    .opponentTwo{
         padding: 10px;
         background-color: aliceblue;
     }
