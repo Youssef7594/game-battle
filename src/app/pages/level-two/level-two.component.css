@@ -24,6 +24,37 @@ html, body {
     .combat{
         margin-top: 80px;
         text-align: center;
+
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+    
+        
+        .perso{
+            margin-right: 65px;
+            border: solid;
+            padding: 10px;
+            background-color: aliceblue;
+        }
+    
+        #button-attack{
+            margin-right: 15px;
+        }
+    
+        #button-attack:hover{
+            background-color: red;
+            color: aliceblue;
+        }
+    
+        .opponent{
+            padding: 10px;
+            background-color: aliceblue;
+        }
+    
+        .opponentTwo{
+            padding: 10px;
+            background-color: aliceblue;
+        }
     }
 
     .return-home{
@@ -40,5 +71,8 @@ html, body {
     }
 
 
+    
+        
+    }
 
-}
+

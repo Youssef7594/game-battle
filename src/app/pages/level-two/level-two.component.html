@@ -4,8 +4,26 @@
 
     <div class="combat">
         
+        <div class="perso">
+            <h2>{{ player.nom }}</h2>
+            <p>PV : {{ player.pv }}</p>
+            <p>Attack : {{ player.attack }}</p>
+            <button id="button-attack" (click)="attaquerTwo()">Attaquer <br> (Press to attack)</button>
+        </div>
+        
 
-        <app-player></app-player>
+        <!-- <app-player></app-player> -->
+
+        <!-- For the opponent 2 -->
+
+    <div class="opponentTwo">
+        <h2>{{ adversairetwo.nom }}</h2>
+        <p>PV : {{ adversairetwo.pv }}</p>
+        <p> Attack : {{ adversairetwo.attack }}</p>
+
+        <button id="button-attack" (click)="attaquerTwo()">Attaquer <br> (Press to attack)</button>
+    
+    </div>
     </div>
 
     <div class="return-home">
