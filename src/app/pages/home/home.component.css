@@ -26,7 +26,11 @@ html, body {
         h1{
             padding-top: 300px;
             font-size: 70px;
+            color: azure;
+            animation: changeColor 2s infinite;
         }
+
+        
 
         .link-button{
             margin-top: 15px;
@@ -69,3 +73,24 @@ html, body {
 }
 
 
+
+
+
+
+
+/*-$$$$$$ KeyFrames $$$$$$$$*/
+
+@keyframes changeColor {
+    0% {
+        color: azure;
+    }
+
+    50%{
+        color: red;
+
+    }
+
+    100%{
+        color: yellow;
+    }
+}

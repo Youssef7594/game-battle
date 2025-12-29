@@ -36,6 +36,20 @@ export class LevelTwoComponent {
     }
   };
 
+  /* attaquerThePlayer() {
+    this.player.pv -= adversairetwo.attack; */
+
+    // Vérifier si l'adversaire est mort player.attack
+    /* if (this.adversairetwo.pv <= 0) {
+      this.router.navigate(['/home']);
+    } */
+
+    // Vérifier si le joueur est mort
+    /* if (this.player.pv <= 0) {
+      this.router.navigate(['/lose']);
+    }
+  }; */
+
 }
 
 
