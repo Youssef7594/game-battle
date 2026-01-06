@@ -39,7 +39,7 @@ export class LevelTwoComponent {
 
   /* The attack of the opponent */
   attaquerThePlayer() {
-    this.player.pv -= adversairetwo.attack; 
+    this.player.pv -= this.adversairetwo.attack; 
 
     // Vérifier si l'adversaire est mort player.attack
     if (this.adversairetwo.pv <= 0) {
