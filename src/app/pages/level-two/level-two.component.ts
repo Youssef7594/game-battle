@@ -36,19 +36,21 @@ export class LevelTwoComponent {
     }
   };
 
-  /* attaquerThePlayer() {
-    this.player.pv -= adversairetwo.attack; */
+
+  /* The attack of the opponent */
+  attaquerThePlayer() {
+    this.player.pv -= adversairetwo.attack; 
 
     // Vérifier si l'adversaire est mort player.attack
-    /* if (this.adversairetwo.pv <= 0) {
+    if (this.adversairetwo.pv <= 0) {
       this.router.navigate(['/home']);
-    } */
+    } 
 
     // Vérifier si le joueur est mort
-    /* if (this.player.pv <= 0) {
+     if (this.player.pv <= 0) {
       this.router.navigate(['/lose']);
     }
-  }; */
+  };
 
 }
 
@@ -73,14 +75,35 @@ export class Players{
 
     
   }
-
-  
-
-
-  
-
-
+   
 };
+
+  
+
+  export class adversairetwo{
+    id : number ;
+    nom : string ;
+    attack : number ;
+    pv : number ;
+  
+  
+  
+  
+    constructor(id: number, nom: string, pv: number ){
+      this.id = id;
+      this.nom = nom;
+      this.pv = pv;
+      // Génère une attaque aléatoire entre 40 et 70
+      this.attack = Math.floor(Math.random() * (70 - 40 + 1)) + 30;
+  
+      
+    }
+
+
+  
+
+
+}
 
 
 
